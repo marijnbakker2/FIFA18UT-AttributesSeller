@@ -4,10 +4,16 @@
     log('Initializing...');
 
     window.addEventListener('keydown', function(ev) {
+
         const keyCode = ev.keyCode;
 
         switch (keyCode) {
             case 191 /* '/' */: // Set this to your own preference
+
+                // Starts listening for changes of the error element, reloads the page on error to prevent ban
+                mutationObserver.observe(document.getElementById('NotificationLayer'), {
+                  childList: true,
+                });
 
                 // Ask user for number of times the algorithm needs te be ran
                 var length = prompt("Enter the number of attributes that need to be sold in a row. Make sure to have selected an attribute already. PLEASE NOTE: The algoritm will continue with the next set of attributes if you enter a number that exceeds the current attribute.");
@@ -19,6 +25,14 @@
             default:
                 break;
         }
+    });
+
+    // Add mutation observer
+    var mutationObserver = new MutationObserver(function(mutations) {
+      // mutations.forEach(function(mutation) {
+        location.reload();
+      // });
+      observer.disconnect();
     });
 
     function touchElement(element){
@@ -49,20 +63,17 @@
     }
 
     function sellItem(){
+      // Get quicksell button from page
+      var quicksellButton = document.getElementsByClassName("DetailPanel")[0].childNodes[1].lastChild;
+      // Click quicksell button
+      touchElement(quicksellButton);
 
-        // Get quicksell button from page
-        var quicksellButton = document.getElementsByClassName("DetailPanel")[0].childNodes[1].lastChild;
-        // Click quicksell button
-        touchElement(quicksellButton);
-
-        setTimeout(function(){
-          // Get OK button from page
-          var okButton = document.getElementsByClassName('btn-flat')[1];
-          // Click OK button
-          touchElement(okButton);
-        // }, (Math.floor(Math.random() * 100) + 100));
+      setTimeout(function(){
+        // Get OK button from page
+        var okButton = document.getElementsByClassName('btn-flat')[1];
+        // Click OK button
+        touchElement(okButton);
       }, 650);
-
     }
 
     /**
