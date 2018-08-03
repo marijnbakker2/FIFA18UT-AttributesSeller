@@ -10,13 +10,7 @@
         switch (keyCode) {
             case 192 /* '`' */: // Set this to your own preference
               perform();
-            case 191 /* '/' */: // Set this to your own preference
-              perform();
-            case 111 /* '/' */: // Set this to your own preference
-              perform();
             case 49 /* '1' */: // Set this to your own preference
-              perform();
-            case 17 /* 'left control' */: // Set this to your own preference
               perform();
             default:
                 break;
