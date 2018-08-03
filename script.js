@@ -2,6 +2,11 @@
     const APP_NAME = 'FIFA18 UT Attributes seller';
 
     log('Initializing...');
+    setTimeout(function(){
+      document.getElementById('user-coin').addEventListener('click', function (event) {
+              perform();
+          });
+    }, 6000);
 
     window.addEventListener('keydown', function(ev) {
 
