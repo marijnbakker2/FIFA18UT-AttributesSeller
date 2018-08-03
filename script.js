@@ -29,9 +29,7 @@
 
     // Add mutation observer
     var mutationObserver = new MutationObserver(function(mutations) {
-      // mutations.forEach(function(mutation) {
-        location.reload();
-      // });
+      location.reload();
       observer.disconnect();
     });
 

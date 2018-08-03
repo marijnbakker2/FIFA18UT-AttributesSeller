@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "FIFA18 UT Attributes seller",
+    "name": "FIFA18 UT Item seller",
     "description": "Easy money clear that club",
-    "homepage_url": "https://github.com/marijnbakker2/attributeseller",
+    "homepage_url": "https://github.com/marijnbakker2/FIFA18UT-ItemSeller",
     "icons": {
         "16": "icon.png",
         "48": "icon.png",
