@@ -70,10 +70,14 @@
       touchElement(quicksellButton);
 
       setTimeout(function(){
-        // Get OK button from page
-        var okButton = document.getElementsByClassName('btn-flat')[1];
-        // Click OK button
-        touchElement(okButton);
+        try {
+          // Get OK button from page
+          var okButton = document.getElementsByClassName("Dialog ui-dialog-type-message")[0].childNodes[1].lastChild.lastChild
+          // Click OK button
+          touchElement(okButton);
+        } catch {
+          // Do nothing
+        }
       }, 650);
     }
 
