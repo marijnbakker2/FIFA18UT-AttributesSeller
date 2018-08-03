@@ -23,3 +23,4 @@ How to use:
 To add:
 - The algorithm can be ran on the background, even in another tab :)
 - The algortihm will refresh the page once an error occurs to prevent bot detection.
+- The algorithm only runs on the EA web app! So you don't have to worry about it anymore on other sites.
