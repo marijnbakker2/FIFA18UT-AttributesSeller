@@ -1,5 +1,5 @@
 # FIFA18UT-AttributesSeller
-Chrome extension in javascript / jQuery that sells attributes cards. More documentation will follow.
+Chrome extension in javascript / jQuery that automatically sells items. More documentation will follow.
 
 How to install:
 
