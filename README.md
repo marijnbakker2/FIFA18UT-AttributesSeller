@@ -6,7 +6,7 @@ How to install:
 1. Download this package, either clone the repository (if you know how to do this) or just click the download button and download as a zip then unzip it.
 2. In chrome browser: navigate to 'chrome://extensions'
 3. Go into 'developer mode'
-4. Load the unpacked extension (should be a button at the top for this)
+4. Load the unpacked extension (should be a button at the top for this “Load unpacked extension…”)
 5. Refresh browser, you should now see the extension icon to the top right.
 Everything should be ready now
 
