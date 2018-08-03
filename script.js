@@ -29,7 +29,7 @@
     function sellAttributes(length){
       log('Script started initiating selling.')
       var l = parseInt(length)+1;
-      var t = 2000;
+      var t = 4000;
 
       for (var i = 1; i < l; i++) {
         // Set time for each iteration
@@ -41,7 +41,7 @@
         }, time);
 
         if (i % 10 == 0){
-          t = 2000;
+          t = 4000;
         } else {
           t+=150;
         }
@@ -63,7 +63,7 @@
           // Click OK button
           touchElement(okButton);
         // }, (Math.floor(Math.random() * 100) + 100));
-      }, 350);
+      }, 650);
 
     }
 
