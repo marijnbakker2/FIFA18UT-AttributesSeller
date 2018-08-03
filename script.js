@@ -8,24 +8,33 @@
         const keyCode = ev.keyCode;
 
         switch (keyCode) {
+            case 192 /* '`' */: // Set this to your own preference
+              perform();
             case 191 /* '/' */: // Set this to your own preference
-
-                // Starts listening for changes of the error element, reloads the page on error to prevent ban
-                mutationObserver.observe(document.getElementById('NotificationLayer'), {
-                  childList: true,
-                });
-
-                // Ask user for number of times the algorithm needs te be ran
-                var length = prompt("Enter the number of attributes that need to be sold in a row. Make sure to have selected an attribute already. PLEASE NOTE: The algoritm will continue with the next set of attributes if you enter a number that exceeds the current attribute.");
-                log(`Amount entered: ${length}`);
-                // Sell the attributes
-                sellAttributes(length);
-
-                break;
+              perform();
+            case 111 /* '/' */: // Set this to your own preference
+              perform();
+            case 49 /* '1' */: // Set this to your own preference
+              perform();
+            case 17 /* 'left control' */: // Set this to your own preference
+              perform();
             default:
                 break;
         }
     });
+
+    function perform(){
+      // Starts listening for changes of the error element, reloads the page on error to prevent ban
+      mutationObserver.observe(document.getElementById('NotificationLayer'), {
+        childList: true,
+      });
+
+      // Ask user for number of times the algorithm needs te be ran
+      var length = prompt("Enter the number of attributes that need to be sold in a row. Make sure to have selected an attribute already. PLEASE NOTE: The algoritm will continue with the next set of attributes if you enter a number that exceeds the current attribute.");
+      log(`Amount entered: ${length}`);
+      // Sell the attributes
+      sellAttributes(length);
+    }
 
     // Add mutation observer
     var mutationObserver = new MutationObserver(function(mutations) {
