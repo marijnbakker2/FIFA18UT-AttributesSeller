@@ -1,4 +1,4 @@
-# FIFA18UT-ItemSellerr
+# FIFA18UT-ItemSeller
 Chrome extension in javascript / jQuery that automatically sells items. More documentation will follow.
 
 How to install:
